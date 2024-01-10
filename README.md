@@ -3,4 +3,6 @@ A CLI for entering startup idea names and descriptions.
 See list of startup ideas.
 
 # usage
-Run `ruby app.rb` in terminal.
+1. git clone https://github.com/ciscovlahakis/startup-ideas-cli.git
+2. `cd startup-ideas-cli`
+3. `ruby app.rb`
