@@ -1,5 +1,8 @@
-# ruby-cli-template
+# startup-ideas-cli
+Enter a startup idea name and description.
+See list of startup ideas.
 
-Use this repository as a template for your Ruby CLI (command line interface) project.
+# usage
+Run `ruby app.rb` in terminal.
 
 - Ruby version: `3.2.1`
