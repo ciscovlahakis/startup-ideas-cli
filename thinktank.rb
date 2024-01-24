@@ -55,20 +55,26 @@ class Thinktank
     end
   end
 
-  def add_startup_idea
-    print "Enter name of idea: "
-    name = gets.chomp
-    print "Enter description: "
-    description = gets.chomp
+  def add_startup_idea(name = nil, description = nil)
+    name ||= begin
+      print "Enter name of idea: "
+      gets.chomp
+    end
+  
+    description ||= begin
+      print "Enter description: "
+      gets.chomp
+    end
+  
     @startupideas << StartupIdea.new(name, description)
-
+  
     puts
     if GREAT_IDEA_KEYWORDS.any? { |keyword| name.include? keyword }
       puts "#{name} is a rad idea, brah."
     else
       puts "#{name} sounds lame."
     end
-  end
+  end  
 
   def view_startup_ideas
     if @startupideas.empty?
